@@ -47,7 +47,7 @@ p {
     align-content: left;
 }
 .mainitem_nav {
-    background-color: #8b8585;
+    background-color: coral;
     flex: 1 1 auto;
     align-self: stretch;
     width: 20%;
