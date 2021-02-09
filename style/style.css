@@ -51,12 +51,13 @@ p {
 .content_container {
     display: -webkit-flex;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    align-items: center;
-    justify-content: left;
+    align-items: stretch;
+    justify-content: stretch;
     align-content: center;
-    background-color: brown;
+    padding: 20px;
+    background-color: #f1f1f1;
 }
 
 .nav_container {
@@ -103,13 +104,7 @@ p {
     flex-wrap: nowrap;
     align-items: left;
 }
-.item_art {
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: left;
-}
+
 .item_art_text {
     align-self: stretch;
 }
@@ -121,12 +116,40 @@ p {
     color:  rgb(45, 3, 230);
 }
 
+.main_item {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.item_text {
+    align-self: stretch;
+    background-color: deepskyblue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+
 @media screen and (max-width: 1025px) {
     .item_art {
         -webkit-flex-direction: column;
         flex-direction: column;
     }
+    .main_item {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+    .content_container {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: stretch;
+        align-content: stretch;
+    }
 }
+
 
 @media screen and (max-width: 769px) {
     .item_art {
@@ -152,6 +175,10 @@ p {
         width: 100%;
         max-width: 769px;
         padding: 20px;
+    }
+    .main_item {
+        -webkit-flex-direction: column;
+        flex-direction: column;
     }
 }
 
