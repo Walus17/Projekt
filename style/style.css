@@ -46,7 +46,17 @@ p {
     justify-content: left;
     align-content: center;
     background-color: brown;
-    max-height: 30px;
+    max-height: 80px;
+}
+.content_container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
+    align-content: center;
+    background-color: brown;
 }
 
 .nav_container {
@@ -124,6 +134,13 @@ p {
         flex-direction: column;
     }
     .main_container {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: stretch;
+        align-content: stretch;
+    }
+    .content_container {
         -webkit-flex-direction: column;
         flex-direction: column;
         align-items: stretch;
