@@ -104,7 +104,11 @@ p {
     flex-wrap: nowrap;
     align-items: left;
 }
-
+.item_price {
+    text-align: center;
+    padding: 10px 20px;
+    align-self: stretch;
+}
 .item_art_text {
     align-self: stretch;
 }
