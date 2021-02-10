@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style/style.css" type="text/css" />
-    <title>Sklep</title>
+    <title>Login</title>
   </head>
   <body>
     <div>
@@ -13,12 +13,10 @@
         </div>
         <div class ="headeritem_text">
           <h1>
-             PC-Parts.com - Twój sklep komputerowy
+             PC-Parts.com - Logowanie
           </h1>
         </div>
-        <div class="log">
-          <a href="log.html">Zaloguj się</a>
-        </div>
+    
       </div>
           <div class="main_container">
             <div class="mainitem_nav">
@@ -35,6 +33,29 @@
                  <li><a href = "index.html">Strona główna</a></li>
                 </ul>
               </div>
+            </div>
+            <div class="content_container">
+                <form>
+                  
+                    <div class="container">
+                      <label for="uname"><b>Nazwa użytkownika</b></label>
+                      <input type="text" placeholder="Wprowadź nazwę..." name="uname" required>
+                  
+                      <label for="psw"><b>Hasło</b></label>
+                      <input type="password" placeholder="Wprowadź hasło..." name="psw" required>
+                  
+                      <button type="submit">Zaloguj się</button>
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember">Zapamiętaj hasło
+                      </label>
+                    </div>
+                  
+                    <div class="container" style="background-color:#f1f1f1">
+                      <button type="button" class="cancelbtn">Anuluj</button>
+                      <span class="psw">Zapomniałeś <a href="#">hasła?</a></span><br/>
+                      <span class="psw"><a href="#">Nie posiadasz konta?</a></span>
+                    </div>
+                  </form>
             </div>
         </div>
   </body>

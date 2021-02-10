@@ -7,6 +7,7 @@ body {
     margin: 0;
     background-color: deepskyblue;
 }
+
 h2 {
     font-size: 20p;
 }
@@ -14,21 +15,26 @@ p {
     text-align: justify;
     font-size: 18px;
 }
-
+title{
+    text-justify: auto;
+}
 .header_container {
-    display: -webkit-flex;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: left;
-    justify-content: left;
-    align-content: left;
+    justify-content: space-between;
     background-color: rgb(56, 75, 160);
     padding: 10px;
     color: goldenrod;
 }
+.headeritem_text{
+    
+   justify-content: center;
+   flex-grow: 2;
+}
 .headeritem_logo {
-    width: 180;
+    justify-content: center;
+    width: 240;
+
 }
 .headeritem_text {
     flex: 1 1 auto;
@@ -58,6 +64,9 @@ p {
     align-content: center;
     padding: 20px;
     background-color: #f1f1f1;
+}
+.content_container li{
+    text-decoration: none;
 }
 
 .nav_container {
@@ -164,8 +173,8 @@ p {
         align-content: stretch;
     }
     .content_container {
-        -webkit-flex-direction: column;
-        flex-direction: column;
+        -webkit-flex-direction: row;
+        flex-direction: row;
         align-items: stretch;
         justify-content: stretch;
         align-content: stretch;
@@ -201,5 +210,131 @@ p {
     opacity:0.7;
 }
 .mainitem_nav a:hover{
+    opacity:0.7;
+}
+
+.prod{
+    display: flex;
+    flex-direction: row;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin: 5px;
+  }
+  
+  .price {
+    color: rgb(221, 14, 14);
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+
+
+  form {
+    border: 3px solid #f1f1f1;
+  }
+  
+  
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  
+  .container {
+    padding: 16px;
+  }
+  
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+  .log li{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+}
+.log a{
+    color:#fff;
+    display:inline-block;
+    padding: 0.5em 0.75em;
+    background-color: rgb(25, 226, 52);
+    border-radius: 4px;
+    text-decoration: none;
+    
+}
+.log a:hover{
     opacity:0.7;
 }
