@@ -1,1 +1,0 @@
-Jeszcze został footer, pierdolety dot. "firmy", jakby się dało to te odnośniki do produktów jakoś uładnić można
