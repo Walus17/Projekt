@@ -5,7 +5,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 5px;
     margin: 0;
-    background-color: deepskyblue;
+    background-color: rgb(235, 159, 61);
 }
 
 h2 {
@@ -13,8 +13,18 @@ h2 {
 }
 p {
     text-align: justify;
+    font-size: 10px;
+    font-family: sans-serif;
+}
+h3 {
+    text-align: justify;
     font-size: 30px;
     font-family: sans-serif;
+}
+h4 {
+text-align: justify;
+font-size: 20px;
+font-family: sans-serif;
 }
 title{
     text-justify: auto;
@@ -23,7 +33,7 @@ title{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgb(56, 75, 160);
+    background-color: rgb(29, 33, 46);
     padding: 10px;
     color: goldenrod;
 }
@@ -52,7 +62,7 @@ title{
     align-items: center;
     justify-content: left;
     align-content: center;
-    background-color: brown;
+    background-color: rgb(43, 47, 59);
     max-height: 80px;
 }
 .content_container {
@@ -78,12 +88,12 @@ title{
     align-items: center;
     justify-content: center;
     align-content: center;
-    background-color: brown;
+    background-color: rgb(45, 44, 53);
     
 
 }
 .mainitem_nav {
-    background-color:brown;
+    background-color: rgb(45, 44, 53);
     flex: 1 1 auto;
     align-self: stretch;
     max-height: fit-content;
@@ -139,7 +149,7 @@ title{
 }
 .item_text {
     align-self: stretch;
-    background-color: deepskyblue;
+    background-color: rgb(238, 197, 62);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
     padding: 20px;
@@ -151,7 +161,13 @@ title{
     margin-bottom: 25px;
     padding: 20px;
 }
-
+.main_footer {
+    width: 100%;
+    background-color: rgb(45, 44, 53);
+    padding: 10px;
+    text-align: center;
+    color:  rgb(238, 197, 62);
+}
 @media screen and (max-width: 1025px) {
     .item_art {
         -webkit-flex-direction: column;

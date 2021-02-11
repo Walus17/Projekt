@@ -44,25 +44,13 @@
         <div class="content_container">
           <div class="main_item">
             <div class="item_text">
-              <b>Kości RAM</b>
+              <h3><b>Kości RAM</b></h3>
             </div>
             <div>
               <img src="../source/pk.jpg" width="250" height="250"/>
               <div class="item_price">
                 <button onclick="myFunction()">Kup Teraz!</button>
-                <p id="demo"></p>
-                <script>
-                  function myFunction() {
-                    var txt;
-                    var r = confirm("Potwierdź swój wybór!");
-                    if (r == true) {
-                      txt = "Potwierdzono!";
-                    } else {
-                      txt = "Anulowano";
-                    }
-                    document.getElementById("demo").innerHTML = txt;
-                  }
-                  </script>
+                <script src="kup.js"></script>
               </div>
             </div>
           </div>
